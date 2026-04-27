@@ -1,0 +1,15 @@
+{
+  "name": "ai-classy",
+  "version": "1.0.0",
+  "description": "Sovereign AI development layer for mobile.",
+  "main": "dashboard.py",
+  "scripts": {
+    "start": "python dashboard.py",
+    "audit": "python shield.py"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "2.1.112"
+  },
+  "author": "jessburnett",
+  "license": "MIT"
+}
