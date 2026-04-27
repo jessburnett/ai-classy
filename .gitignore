@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _build
 _tracks
 
@@ -11,3 +12,35 @@ opa-debug-js
 *.api-txt
 *.exe
 *.log
+=======
+# --- Python Standard ---
+__pycache__/
+*.py[cod]
+*.class
+.venv/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# --- OPA / Rego (Open Policy Agent) ---
+# Ignore OPA evaluation artifacts but KEEP .rego files
+*.tar.gz
+bundle/
+data.json
+# Only ignore input.json if it contains sensitive test data
+input.json 
+
+# --- Project ai-classy Specific ---
+# Ignore local development logs
+*.log
+.agent/
+!AGENT_POLICY.md
+
+# --- OS / Mobile (Termux) ---
+.DS_Store
+.thumbnails/
+>>>>>>> 83bf9f8 (init dev from mobile)

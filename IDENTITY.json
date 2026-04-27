@@ -1,0 +1,19 @@
+{
+  "developer": {
+    "alias": "Classy-Dev-01",
+    "region": "US-CO-SOTA",
+    "frameworks": ["Privacy-by-Design", "NIST-Agent-Ready"]
+  },
+  "agent_governance": {
+    "policy_version": "2026.1",
+    "allowed_actions": ["read", "lint", "propose_fix", "test"],
+    "restricted_actions": ["force_push", "delete_database", "bypass_privacy_shield"],
+    "human_in_the_loop_required": true
+  },
+  "compliance": {
+    "statute": "CO SB 24-205",
+    "standard": "ISO/IEC 42001",
+    "audit_trail": "local_only"
+  }
+}
+

@@ -1,0 +1,37 @@
+{
+  "manifest_version": "1.0",
+  "project": "brainchild",
+  "developer": "Classy-Dev-01",
+  "foundation_models": [
+    {
+      "model_name": "Claude 3.7 / 4.7 (Opus/Sonnet)",
+      "provider": "Anthropic",
+      "function": "Primary reasoning, code generation, and agentic orchestration.",
+      "limitations": "Subject to 'Unsupported platform' binary errors on Android/Bionic libc systems."
+    },
+    {
+      "model_name": "Gemini 3 Flash / 1.5 Pro",
+      "provider": "Google",
+      "function": "Context retrieval, multimodal analysis, and long-context reasoning.",
+      "training_data_categories": "Massive-scale web crawl, books, code, and multimodal datasets."
+    }
+{
+      "model_name": "Gemini 3 Flash / 1.5 Pro",
+      "provider": "Google",
+      "function": "Multimodal analysis and long-context retrieval."
+    },
+    {
+      "model_name": "Claude 3.7 / 4.7 (Opus/Sonnet)",
+      "provider": "Anthropic",
+      "function": "Primary reasoning and code generation."
+    }
+  ],
+  "safety_mechanisms": [
+    {
+      "type": "Privacy Shield",
+      "implementation": "shield.py",
+      "purpose": "Local PII redaction and path scrubbing per SB 24-205 standards."
+    }
+  ]
+}
+
